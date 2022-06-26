@@ -1,5 +1,10 @@
 <style>
 
+header {
+	background-color: {{ .Site.Params.gateway.header_background_color }};
+	border-bottom: 1px solid {{ .Site.Params.gateway.header_border_color }};
+}
+
 header .profile_photo {
 	border-radius: 40px;
 }
@@ -10,15 +15,40 @@ header h1 {
 
 header h1 a {
 	text-decoration: none;	
-	color: black;
+	color: {{ .Site.Params.gateway.text_color }};
 }
 
 header h1 a:visited {
-	color: black;
+	color: {{ .Site.Params.gateway.text_color }};
 }
 
 main.links {
 	margin-top: 20px;
+}
+
+main.links a {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background-color: {{ .Site.Params.gateway.button_background_color }};
+	border: 1px solid {{ .Site.Params.gateway.button_border_color }};
+	border-radius: 5px;
+	max-width: 400px;
+	font-size: 1rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-decoration: none;
+	color: black;
+	transition: 0.4s;
+}
+
+main.links a:hover {
+	color: {{ .Site.Params.gateway.link_color }};	
+	border: 1px solid {{ .Site.Params.gateway.link_color }};	
 }
 
 </style>

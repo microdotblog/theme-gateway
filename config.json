@@ -1,2 +1,13 @@
 {
+	"params": {
+		"gateway": {
+			"text_color": "#000000",
+			"background_color": "#ffffff",
+			"link_color": "#1d489b",
+			"button_background_color": "#f5f7fe",
+			"button_border_color": "#d8dae0",
+			"header_background_color": "#f5f7fe",
+			"header_border_color": "#d8dae0"
+		}
+	}
 }
