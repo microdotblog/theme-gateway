@@ -1,22 +1,42 @@
-{{ define "main" }}
-<div class="h-feed">
+<!DOCTYPE html>
+<html>
 
-	{{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
-	{{ range $paginator.Pages  }}
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <header>          
+        <a href="/"><img src="{{ .Site.Author.avatar }}" class="profile_photo" width="80" height="80"></a>        
+        <h1><a href="/">{{ .Site.Title }}</a></h1>
+    </header>
     
-      <p class="h-entry">
-		{{ if .Title }}
-			<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-		{{ end }}
+    <main class="links">
 
-        <a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></a>
+        {{ with .Site.Params.microblog_username }}
+            <a href="https://micro.blog/{{ . }}">Micro.blog</a>
+        {{ end }}
+    
+        {{ with .Site.Params.twitter_username }}
+            <a href="https://twitter.com/{{ . }}">Twitter</a>
+        {{ end }}
 
-        <div class="e-content">
-         	{{ .Content }}
-        </div>
-      </p>
-      
-    {{ end }}
+        {{ with .Site.Params.facebook_username }}
+            <a href="https://facebook.com/{{ . }}">Facebook</a>
+        {{ end }}
 
-</div>
-{{ end }}
+        {{ with .Site.Params.github_username }}
+            <a href="https://github.com/{{ . }}">GitHub</a>
+        {{ end }}
+
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "custom_footer.html" . }}
+
+        {{ range .Site.Params.plugins_js }}
+            <script src="{{ . }}"></script>
+        {{ end }}
+
+  </body>
+
+</html>

@@ -13,6 +13,7 @@
 
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="{{ "css/simple.min.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  {{ partial "style.html" . }}
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="canonical" href="{{ .Permalink }}">
 

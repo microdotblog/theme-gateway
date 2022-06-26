@@ -1,8 +1,9 @@
 <header>
-
-  <h1><a href="/">{{ .Site.Title }}</a></h1>
-
-  <nav>
+		
+	<a href="/"><img src="{{ .Site.Author.avatar }}" class="profile_photo" width="80" height="80"></a>
+	<h1><a href="/">{{ .Site.Title }}</a></h1>
+	
+	<nav>
 
 	{{ range .Site.Menus.main }}
 		{{ if .Page.Params.redirect_url }}
@@ -12,6 +13,6 @@
 		{{ end }}
 	{{ end }}
 
-  </nav>
+	</nav>
 
 </header>
