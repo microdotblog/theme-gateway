@@ -1,13 +1,11 @@
 {
 	"params": {
-		"gateway": {
-			"text_color": "#000000",
-			"background_color": "#ffffff",
-			"link_color": "#1d489b",
-			"button_background_color": "#f5f7fe",
-			"button_border_color": "#d8dae0",
-			"header_background_color": "#f5f7fe",
-			"header_border_color": "#d8dae0"
-		}
+		"gateway_text_color": "#000000",
+		"gateway_background_color": "#ffffff",
+		"gateway_link_color": "#1d489b",
+		"gateway_button_background_color": "#f5f7fe",
+		"gateway_button_border_color": "#d8dae0",
+		"gateway_header_background_color": "#f5f7fe",
+		"gateway_header_border_color": "#d8dae0"
 	}
 }

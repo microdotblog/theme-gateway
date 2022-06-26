@@ -4,69 +4,69 @@
 	"description": "Home page with links to other platforms, with full blog and color options.",
 	"fields": [
 		{
-			"field": "params.gateway.mastodon_username",
+			"field": "params.gateway_mastodon_username",
 			"label": "Mastodon username"
 		},
 		{
-			"field": "params.gateway.twitter_username",
+			"field": "params.gateway_twitter_username",
 			"label": "Twitter username"
 		},
 		{
-			"field": "params.gateway.facebook_username",
+			"field": "params.gateway_facebook_username",
 			"label": "Facebook username"
 		},
 		{
-			"field": "params.gateway.instagram_username",
+			"field": "params.gateway_instagram_username",
 			"label": "Instagram username"
 		},
 		{
-			"field": "params.gateway.snapchat_username",
+			"field": "params.gateway_snapchat_username",
 			"label": "Snapchat username"
 		},
 		{
-			"field": "params.gateway.tiktok_username",
+			"field": "params.gateway_tiktok_username",
 			"label": "TikTk username"
 		},
 		{
-			"field": "params.gateway.linkedin_username",
+			"field": "params.gateway_linkedin_username",
 			"label": "LinkedIn username"
 		},
 		{
-			"field": "params.gateway.github_username",
+			"field": "params.gateway_github_username",
 			"label": "GitHub username"
 		},
 		{
-			"field": "params.gateway.text_color",
+			"field": "params.gateway_text_color",
 			"label": "Text color",
 			"type": "color"
 		},
 		{
-			"field": "params.gateway.background_color",
+			"field": "params.gateway_background_color",
 			"label": "Background color",
 			"type": "color"
 		},
 		{
-			"field": "params.gateway.link_color",
+			"field": "params.gateway_link_color",
 			"label": "Link color",
 			"type": "color"
 		},
 		{
-			"field": "params.gateway.button_background_color",
+			"field": "params.gateway_button_background_color",
 			"label": "Button background color",
 			"type": "color"
 		},
 		{
-			"field": "params.gateway.button_border_color",
+			"field": "params.gateway_button_border_color",
 			"label": "Button border color",
 			"type": "color"
 		},
 		{
-			"field": "params.gateway.header_background_color",
+			"field": "params.gateway_header_background_color",
 			"label": "Header background color",
 			"type": "color"
 		},
 		{
-			"field": "params.gateway.header_border_color",
+			"field": "params.gateway_header_border_color",
 			"label": "Header border color",
 			"type": "color"
 		}
