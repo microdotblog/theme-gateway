@@ -1,5 +1,74 @@
 {
 	"version": "1.0",
 	"title": "Gateway theme",
-	"description": "Home page with links to other services."
+	"description": "Home page with links to other platforms, with full blog and color options.",
+	"fields": [
+		{
+			"name": "params.gateway.mastodon_username",
+			"label": "Mastodon username"
+		},
+		{
+			"name": "params.gateway.twitter_username",
+			"label": "Twitter username"
+		},
+		{
+			"name": "params.gateway.facebook_username",
+			"label": "Facebook username"
+		},
+		{
+			"name": "params.gateway.instagram_username",
+			"label": "Instagram username"
+		},
+		{
+			"name": "params.gateway.snapchat_username",
+			"label": "Snapchat username"
+		},
+		{
+			"name": "params.gateway.tiktok_username",
+			"label": "TikTk username"
+		},
+		{
+			"name": "params.gateway.linkedin_username",
+			"label": "LinkedIn username"
+		},
+		{
+			"name": "params.gateway.github_username",
+			"label": "GitHub username"
+		},
+		{
+			"name": "params.gateway.text_color",
+			"label": "Text color",
+			"type": "color"
+		},
+		{
+			"name": "params.gateway.background_color",
+			"label": "Background color",
+			"type": "color"
+		},
+		{
+			"name": "params.gateway.link_color",
+			"label": "Link color",
+			"type": "color"
+		},
+		{
+			"name": "params.gateway.button_background_color",
+			"label": "Button background color",
+			"type": "color"
+		},
+		{
+			"name": "params.gateway.button_border_color",
+			"label": "Button border color",
+			"type": "color"
+		},
+		{
+			"name": "params.gateway.header_background_color",
+			"label": "Header background color",
+			"type": "color"
+		},
+		{
+			"name": "params.gateway.header_border_color",
+			"label": "Header border color",
+			"type": "color"
+		}
+	]
 }
