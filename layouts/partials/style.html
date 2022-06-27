@@ -9,6 +9,10 @@ a {
 	color: {{ .Site.Params.gateway_link_color }};
 }
 
+nav a {
+	transition: 0s;	
+}
+
 header {
 	background-color: {{ .Site.Params.gateway_header_background_color }};
 	border-bottom: 1px solid {{ .Site.Params.gateway_header_border_color }};
@@ -52,7 +56,6 @@ main.links a {
 	padding-bottom: 6px;
 	text-decoration: none;
 	color: black;
-	transition: 0.4s;
 }
 
 main.links a:hover {
