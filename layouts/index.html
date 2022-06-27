@@ -49,7 +49,7 @@
         {{ end }}
 
         {{ with .Site.Params.gateway_blog_url }}
-          <a href="{{ . }}"><span class=""></span> Blog: {{ replace . "https://" }}</a>
+          <a href="{{ . }}"><span class=""></span> Blog: {{ replace . "https://" "" }}</a>
         {{ end }}
 
     </main>
