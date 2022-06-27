@@ -29,7 +29,7 @@
 		},
 		{
 			"field": "params.gateway_tiktok_username",
-			"label": "TikTk username"
+			"label": "TikTok username"
 		},
 		{
 			"field": "params.gateway_linkedin_username",
