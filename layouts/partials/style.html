@@ -9,6 +9,10 @@ a {
 	color: {{ .Site.Params.gateway_link_color }};
 }
 
+a:visited {
+	color: {{ .Site.Params.gateway_link_color }};
+}
+
 nav a {
 	transition: 0s;	
 }
@@ -33,6 +37,10 @@ header h1 a {
 
 header h1 a:visited {
 	color: {{ .Site.Params.gateway_text_color }};
+}
+
+footer {
+	border-top: 1px solid {{ .Site.Params.gateway_header_border_color }};
 }
 
 main.links {
@@ -61,6 +69,10 @@ main.links a {
 main.links a:hover {
 	color: {{ .Site.Params.gateway_link_color }};	
 	border: 1px solid {{ .Site.Params.gateway_link_color }};	
+}
+
+.archive_categories {
+	margin-top: 30px;	
 }
 
 </style>
