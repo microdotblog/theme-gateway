@@ -1,5 +1,5 @@
 {
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"title": "Gateway theme",
 	"description": "Home page with links to other platforms, with full blog and color options.",
 	"fields": [
@@ -38,6 +38,10 @@
 		{
 			"field": "params.gateway_github_username",
 			"label": "GitHub username"
+		},
+		{
+			"field": "params.gateway_medium_username",
+			"label": "Medium username"
 		},
 		{
 			"field": "params.gateway_blog_url",

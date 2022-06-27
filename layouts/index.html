@@ -33,19 +33,23 @@
         {{ end }}
 
         {{ with .Site.Params.gateway_snapchat_username }}
-            <a href="https://snapchat.com/{{ . }}"><span class="fa-brands fa-snapchat"></span> Snapchat: {{ . }}</a>
+            <a href="https://snapchat.com/add/{{ . }}"><span class="fa-brands fa-snapchat"></span> Snapchat: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_tiktok_username }}
-            <a href="https://tiktok.com/{{ . }}"><span class="fa-brands fa-tiktok"></span> TikTok: {{ . }}</a>
+            <a href="https://tiktok.com/@{{ . }}"><span class="fa-brands fa-tiktok"></span> TikTok: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_linkedin_username }}
-            <a href="https://linkedin.com/{{ . }}"><span class="fa-brands fa-linkedin"></span> LinkedIn: {{ . }}</a>
+            <a href="https://linkedin.com/in/{{ . }}"><span class="fa-brands fa-linkedin"></span> LinkedIn: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_github_username }}
             <a href="https://github.com/{{ . }}"><span class="fa-brands fa-github"></span> GitHub: {{ . }}</a>
+        {{ end }}
+
+        {{ with .Site.Params.gateway_medium_username }}
+            <a href="https://medium.com/@{{ . }}"><span class="fa-brands fa-medium"></span> Medium: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_email }}
