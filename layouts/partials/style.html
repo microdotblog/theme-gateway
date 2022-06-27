@@ -1,5 +1,14 @@
 <style>
 
+body {
+	color: {{ .Site.Params.gateway_text_color }};
+	background-color: {{ .Site.Params.gateway_background_color }};
+}
+
+a {
+	color: {{ .Site.Params.gateway_link_color }};
+}
+
 header {
 	background-color: {{ .Site.Params.gateway_header_background_color }};
 	border-bottom: 1px solid {{ .Site.Params.gateway_header_border_color }};
