@@ -6,6 +6,7 @@
 		"gateway_button_background_color": "#f5f7fe",
 		"gateway_button_border_color": "#d8dae0",
 		"gateway_header_background_color": "#f5f7fe",
-		"gateway_header_border_color": "#d8dae0"
+		"gateway_header_border_color": "#d8dae0",
+		"gateway_hostname": "[HOSTNAME]"
 	}
 }

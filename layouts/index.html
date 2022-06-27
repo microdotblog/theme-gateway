@@ -48,8 +48,10 @@
             <a href="https://github.com/{{ . }}"><span class="fa-brands fa-github"></span> GitHub: {{ . }}</a>
         {{ end }}
 
-        {{ with .Site.Params.gateway_blog_url }}
-          <a href="{{ . }}"><span class=""></span> Blog: {{ replace . "https://" "" }}</a>
+        {{ if .Site.Params.gateway_blog_url }}
+          <a href="{{ .Site.Params.gateway_blog_url }}">Blog: {{ replace .Site.Params.gateway_blog_url "https://" "" }}</a>
+        {{ else }}
+          <a href="https://{{ .Site.Params.gateway_hostname }}/archive/">Blog: {{ .Site.Params.gateway_hostname }}</a>
         {{ end }}
 
     </main>
