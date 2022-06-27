@@ -1,5 +1,5 @@
 {
-	"version": "1.0",
+	"version": "1.0.1",
 	"title": "Gateway theme",
 	"description": "Home page with links to other platforms, with full blog and color options.",
 	"fields": [
@@ -42,6 +42,10 @@
 		{
 			"field": "params.gateway_blog_url",
 			"label": "Blog URL"
+		},
+		{
+			"field": "params.gateway_email",
+			"label": "Email"
 		},
 		{
 			"field": "params.gateway_text_color",
