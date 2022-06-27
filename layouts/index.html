@@ -13,7 +13,7 @@
     <main class="links">
 
         {{ with .Site.Author.username }}
-            <a href="https://micro.blog/{{ . }}">Micro.blog: {{ . }}</a>
+            <a href="https://micro.blog/{{ . }}"><span class="fa-brands fa-microblog"></span> Micro.blog: {{ . }}</a>
         {{ end }}
     
         {{ with .Site.Params.gateway_mastodon_username }}
