@@ -8,6 +8,10 @@
 			"label": "Mastodon username"
 		},
 		{
+			"field": "params.gateway_mastodon_url",
+			"label": "Mastodon URL"
+		},
+		{
 			"field": "params.gateway_twitter_username",
 			"label": "Twitter username"
 		},
@@ -34,6 +38,10 @@
 		{
 			"field": "params.gateway_github_username",
 			"label": "GitHub username"
+		},
+		{
+			"field": "params.gateway_blog_url",
+			"label": "Blog URL"
 		},
 		{
 			"field": "params.gateway_text_color",

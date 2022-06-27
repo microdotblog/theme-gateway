@@ -16,39 +16,41 @@
             <a href="https://micro.blog/{{ . }}"><span class="fa-brands fa-microblog"></span> Micro.blog: {{ . }}</a>
         {{ end }}
     
-        {{ with .Site.Params.gateway_mastodon_username }}
-            <a href="https://mastodon.social/{{ . }}">Mastodon: {{ . }}</a>
+        {{ if .Site.Params.gateway_mastodon_username }}
+            <a href="{{ .Site.Params.gateway_mastodon_url }}"><span class="fa-brands fa-mastodon"></span> Mastodon: {{ .Site.Params.gateway_mastodon_username }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_twitter_username }}
-            <a href="https://twitter.com/{{ . }}">Twitter: {{ . }}</a>
+            <a href="https://twitter.com/{{ . }}"><span class="fa-brands fa-twitter"></span> Twitter: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_facebook_username }}
-            <a href="https://facebook.com/{{ . }}">Facebook: {{ . }}</a>
+            <a href="https://facebook.com/{{ . }}"><span class="fa-brands fa-facebook"></span> Facebook: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_instagram_username }}
-            <a href="https://instagram.com/{{ . }}">Instagram: {{ . }}</a>
+            <a href="https://instagram.com/{{ . }}"><span class="fa-brands fa-instagram"></span> Instagram: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_snapchat_username }}
-            <a href="https://snapchat.com/{{ . }}">Snapchat: {{ . }}</a>
+            <a href="https://snapchat.com/{{ . }}"><span class="fa-brands fa-snapchat"></span> Snapchat: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_tiktok_username }}
-            <a href="https://tiktok.com/{{ . }}">TikTok: {{ . }}</a>
+            <a href="https://tiktok.com/{{ . }}"><span class="fa-brands fa-tiktok"></span> TikTok: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_linkedin_username }}
-            <a href="https://linkedin.com/{{ . }}">LinkedIn: {{ . }}</a>
+            <a href="https://linkedin.com/{{ . }}"><span class="fa-brands fa-linkedin"></span> LinkedIn: {{ . }}</a>
         {{ end }}
 
         {{ with .Site.Params.gateway_github_username }}
-            <a href="https://github.com/{{ . }}">GitHub: {{ . }}</a>
+            <a href="https://github.com/{{ . }}"><span class="fa-brands fa-github"></span> GitHub: {{ . }}</a>
         {{ end }}
 
-        <a href="/2022/">Blog Posts</a>
+        {{ with .Site.Params.gateway_blog_url }}
+          <a href="{{ . }}"><span class=""></span> Blog: {{ replace . "https://" }}</a>
+        {{ end }}
 
     </main>
 
