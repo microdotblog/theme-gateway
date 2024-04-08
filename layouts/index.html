@@ -20,14 +20,14 @@
           <span class="fa-brands fa-microblog"></span> Micro.blog: {{ . }}
         </a>
       {{ end }} 
-      {{ with .Site.Params.gateway_mastodon_username }}
+      {{ if .Site.Params.gateway_mastodon_username }}
         <a href="{{ .Site.Params.gateway_mastodon_url }}">
           <span class="fa-brands fa-mastodon"></span> Mastodon: {{ .Site.Params.gateway_mastodon_username }}
         </a>
       {{ end }} 
       {{ with .Site.Params.gateway_pixelfed_username }}
         <a href="https://pixelfed.social/{{ . }}">
-          <span class="fa-brands fa-mastodon"></span> Pixelfed: {{.Site.Params.gateway_pixelfed_username }}</a>
+          <span class="fa-brands fa-mastodon"></span> Pixelfed: {{. }}</a>
       {{ end }} 
       {{ with .Site.Params.gateway_twitter_username }}
       <a href="https://twitter.com/{{ . }}">
