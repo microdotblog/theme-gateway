@@ -6,7 +6,7 @@
     <header>
       <a href="/"
         ><img
-          src="{{ .Site.Author.avatar }}"
+          src="{{ .Site.Params.author.avatar }}"
           class="profile_photo"
           width="80"
           height="80"
@@ -15,7 +15,7 @@
     </header>
 
     <main class="links">
-      {{ with .Site.Author.username }}
+      {{ with .Site.Params.author.username }}
         <a href="https://micro.blog/{{ . }}">
           <span class="fa-brands fa-microblog"></span> Micro.blog: {{ . }}
         </a>
