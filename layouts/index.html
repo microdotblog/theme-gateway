@@ -95,8 +95,7 @@
       {{ end }}
     </main>
 
-    {{ partial "footer.html" . }} {{ partial "custom_footer.html" . }} {{ range
-    .Site.Params.plugins_js }}
+    {{ partial "footer.html" . }} {{ partial "custom_footer.html" . }} {{ range .Site.Params.plugins_js }}
     <script src="{{ . }}"></script>
     {{ end }}
   </body>
